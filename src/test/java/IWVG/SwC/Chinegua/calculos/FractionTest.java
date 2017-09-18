@@ -32,5 +32,10 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals(0.5, pt.decimal(),0.5);
     }
+    
+    @Test
+    public void testLargerNumerator() {
+        assertEquals(false,pt.largerNumerator());
+    }
 
 }

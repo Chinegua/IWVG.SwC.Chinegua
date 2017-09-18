@@ -25,5 +25,11 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
+    
+    public boolean largerNumerator() {
+        if (this.numerator > this.denominator) {
+            return true;
+        } return false;
+    }
 
 }
