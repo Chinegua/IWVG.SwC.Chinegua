@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/Chinegua/IWVG.SwC.Chinegua.svg?branch=master)](https://travis-ci.org/Chinegua/IWVG.SwC.Chinegua)
 
+[!Status](https://sonarcloud.io//api/badges/gate?key=IWVG.SwC.Chinegua%3AIWVG.SwC.Chinegua)
 
 
 # Arquitecto
