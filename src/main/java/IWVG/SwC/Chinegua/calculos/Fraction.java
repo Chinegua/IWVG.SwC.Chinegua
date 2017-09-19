@@ -41,5 +41,10 @@ public class Fraction {
         return (fractionA.getNumerator() / fractionA.getDenominator()) * (fractionA.getNumerator() / fractionA.getDenominator());
     }
     
-
+    public Fraction addFraction (Fraction f) {
+        int num = this.getNumerator()*f.getDenominator() + f.getNumerator()*this.getDenominator();
+        int den = this.getDenominator()*f.getDenominator();
+        Fraction result = new Fraction(num,den);
+        return result;
+    }
 }
