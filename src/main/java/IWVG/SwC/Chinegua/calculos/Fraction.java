@@ -31,5 +31,15 @@ public class Fraction {
             return true;
         } return false;
     }
+    
+    public double multiplyFraction(Fraction fractionA, Fraction fractionB) {
+        assert fractionA !=null;
+        assert fractionB !=null;
+        assert fractionA.getDenominator() >0;
+        assert fractionB.getDenominator() >0;
+        
+        return (fractionA.getNumerator() / fractionA.getDenominator()) * (fractionA.getNumerator() / fractionA.getDenominator());
+    }
+    
 
 }
