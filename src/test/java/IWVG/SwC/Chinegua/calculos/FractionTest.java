@@ -40,5 +40,13 @@ public class FractionTest {
         assertEquals(false,pt.largerNumerator());
         assertEquals(true,pt3.largerNumerator());
     }
+    
+    @Test
+    public void testMultiplicar() {
+        pt = new Fraction(1,1);
+        pt2 = new Fraction(1,2);
+        assertEquals(0.5, pt.multiplyFraction(pt, pt2),0.5);
+        
+    }
 
 }
