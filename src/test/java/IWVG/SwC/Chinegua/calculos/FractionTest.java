@@ -8,11 +8,13 @@ import org.junit.Test;
 public class FractionTest {
    private Fraction pt;
    private Fraction pt2;
+   private Fraction pt3;
    
    @Before
    public void before(){
        pt2 = new Fraction();
        pt = new Fraction(1,2);
+       pt3 = new Fraction(3,2);
     }
 
     @Test
@@ -36,6 +38,7 @@ public class FractionTest {
     @Test
     public void testLargerNumerator() {
         assertEquals(false,pt.largerNumerator());
+        assertEquals(true,pt3.largerNumerator());
     }
 
 }
