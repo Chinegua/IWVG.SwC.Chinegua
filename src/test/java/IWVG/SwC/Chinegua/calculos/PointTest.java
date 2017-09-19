@@ -50,5 +50,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testCoordenadasVector() {
+        Point p = pt.coordenadasVector(4, 5);
+        assertEquals(2, p.getX());
+        assertEquals(2, p.getY());
+    }
 
 }

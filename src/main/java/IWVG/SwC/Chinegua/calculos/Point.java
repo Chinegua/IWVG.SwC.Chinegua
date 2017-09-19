@@ -41,5 +41,10 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
+    
+    public Point coordenadasVector(int x2, int y2) {
+        Point p = new Point (x2-this.getX(), y2-this.getY());
+        return p;
+    }
 
 }
