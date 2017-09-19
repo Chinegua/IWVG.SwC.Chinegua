@@ -48,5 +48,12 @@ public class FractionTest {
         assertEquals(0.5, pt.multiplyFraction(pt, pt2),0.5);
         
     }
+    
+    @Test
+    public void testAddFraction() {
+        Fraction f = pt.addFraction(pt3);
+        assertEquals(8, f.getNumerator());
+        assertEquals(4, f.getDenominator());
+    }
 
 }
