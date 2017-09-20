@@ -25,26 +25,28 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
-    
+
     public boolean largerNumerator() {
         if (this.numerator > this.denominator) {
             return true;
-        } return false;
+        }
+        return false;
     }
-    
+
     public double multiplyFraction(Fraction fractionA, Fraction fractionB) {
-        assert fractionA !=null;
-        assert fractionB !=null;
-        assert fractionA.getDenominator() >0;
-        assert fractionB.getDenominator() >0;
-        
-        return (fractionA.getNumerator() / fractionA.getDenominator()) * (fractionA.getNumerator() / fractionA.getDenominator());
+        assert fractionA != null;
+        assert fractionB != null;
+        if (fractionA == null || fractionB==null) {
+            throw new ExceptionInInitializerError();
+        }
+        return (double)((fractionA.getNumerator() / fractionA.getDenominator()) * (fractionB.getNumerator() / fractionB.getDenominator()));
+
     }
-    
-    public Fraction addFraction (Fraction f) {
-        int num = this.getNumerator()*f.getDenominator() + f.getNumerator()*this.getDenominator();
-        int den = this.getDenominator()*f.getDenominator();
-        Fraction result = new Fraction(num,den);
+
+    public Fraction addFraction(Fraction f) {
+        int num = this.getNumerator() * f.getDenominator() + f.getNumerator() * this.getDenominator();
+        int den = this.getDenominator() * f.getDenominator();
+        Fraction result = new Fraction(num, den);
         return result;
     }
 }
