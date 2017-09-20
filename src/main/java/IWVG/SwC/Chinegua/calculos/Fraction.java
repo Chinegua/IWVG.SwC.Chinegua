@@ -36,11 +36,7 @@ public class Fraction {
     public double multiplyFraction(Fraction fractionA, Fraction fractionB) {
         assert fractionA != null;
         assert fractionB != null;
-        if (fractionA == null || fractionB==null) {
-            throw new ExceptionInInitializerError();
-        }
         return (double)((fractionA.getNumerator() / fractionA.getDenominator()) * (fractionB.getNumerator() / fractionB.getDenominator()));
-
     }
 
     public Fraction addFraction(Fraction f) {
