@@ -56,7 +56,7 @@ public class FractionTest {
 
     @Test
     public void testDivisionByZero() {
-        pt = new Fraction(1, 2);
+        pt = new Fraction(1, 0);
         pt2 = new Fraction(1, 0);
         exception.expect(ArithmeticException.class);
         assertEquals(0.5, pt.multiplyFraction(pt, pt2), 0.5);

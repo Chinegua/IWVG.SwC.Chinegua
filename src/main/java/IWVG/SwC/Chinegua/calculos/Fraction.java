@@ -36,9 +36,12 @@ public class Fraction {
     public double multiplyFraction(Fraction fractionA, Fraction fractionB) {
         assert fractionA != null;
         assert fractionB != null;
-        double resultadoA =fractionA.getNumerator() / (double)fractionA.getDenominator();
-        double resultadoB =fractionB.getNumerator() / (double)fractionB.getDenominator();
-        return resultadoA * resultadoB;
+        double resultadoNum =fractionA.getNumerator() * (double)fractionB.getNumerator();
+        double resultadoDen =fractionA.getDenominator() * (double)fractionB.getDenominator();
+        if (resultadoDen ==0) {
+            throw new ArithmeticException("Divsion no permitia");
+        }
+        return resultadoNum/(double)resultadoDen;
     }
 
     public Fraction addFraction(Fraction f) {
