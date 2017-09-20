@@ -36,7 +36,9 @@ public class Fraction {
     public double multiplyFraction(Fraction fractionA, Fraction fractionB) {
         assert fractionA != null;
         assert fractionB != null;
-        return (double)((fractionA.getNumerator() / fractionA.getDenominator()) * (fractionB.getNumerator() / fractionB.getDenominator()));
+        double resultadoA = fractionA.getNumerator() / fractionA.getDenominator();
+        double resultadoB = fractionB.getNumerator() / fractionB.getDenominator();
+        return (double)(resultadoA * resultadoB);
     }
 
     public Fraction addFraction(Fraction f) {
