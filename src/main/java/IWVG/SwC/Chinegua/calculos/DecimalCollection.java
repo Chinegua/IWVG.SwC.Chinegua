@@ -45,4 +45,18 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double lesser() {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+        double lesser = 0;
+        for (int i = 0; i < collection.size(); i++) {
+            if (collection.get(i) < lesser) {
+                lesser = collection.get(i);
+            }
+        }
+        return lesser;
+    }
+
 }
