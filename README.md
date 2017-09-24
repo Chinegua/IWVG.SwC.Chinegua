@@ -3,6 +3,7 @@
 [![Quality Gate](https://sonarcloud.io//api/badges/gate?key=IWVG.SwC.Chinegua%3AIWVG.SwC.Chinegua)](https://sonarcloud.io//api/badges/gate?key=IWVG.SwC.Chinegua%3AIWVG.SwC.Chinegua)
 
 
+
 # Arquitecto
 * Aitor Bernal Falcón
 
